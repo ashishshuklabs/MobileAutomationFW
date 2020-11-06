@@ -14,8 +14,6 @@ dotnet core.
 - Android device
 - Appium Server
 - Selenium Grid
-- iTimekeep native app
-- EA Pro app
 
 # Build and Test
 - dotnet build
