@@ -66,5 +66,5 @@ chrome://inspect/#devices
 Be aware of **systemPort** race conditions, eventhough selectFreePort is selected.
 This must be specified specifically to avaid them stepping over each other's foot. 
 
-# Important - Selenium Grid (Files provided) and overall test execution
+# Important - Selenium Grid (Files provided) and Framework Dependency
 Ensure that you add the DeviceGroup capability in your node config and test files. The capability at a minimum requires platformName(ios/android) and device type (phone/tablet) entries there. These are mandatory and help in running tests against specific devices on the grid and are closely tagged within the framework. Check out integration tests in the tests project for its correct usage.
