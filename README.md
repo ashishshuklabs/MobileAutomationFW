@@ -67,4 +67,4 @@ Be aware of **systemPort** race conditions, eventhough selectFreePort is selecte
 This must be specified specifically to avaid them stepping over each other's foot. 
 
 ## 6. Included Selenium Grid files
-Ensure that you add the DeviceGroup capability in your node config and ps script files. The capability at a minimum requires platformName and device type (phone/table) entries there. These are mandatory and help in running tests against specific devices on the grid.
+Ensure that you add the DeviceGroup capability in your node config and test files. The capability at a minimum requires platformName and device type (phone/table) entries there. These are mandatory and help in running tests against specific devices on the grid.
