@@ -1,0 +1,8 @@
+bin/
+obj/
+.vscode
+TestResults
+.vs/
+*.log
+/SeleniumGrid/hub.log.lck
+Bin/

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <TestRunParameters>
+    <Parameter name="RS_ServerHost" value="localhost"/>
+    <Parameter name="RS_ServerPort" value="4444"/>
+    <Parameter name="RS_ServerResource" value="/wd/hub"/>
+    <Parameter name="RS_BrowserName" value="Chrome"/>
+    <Parameter name="RS_LocalExecution" value="false"/>
+    <Parameter name="RS_LocalExecutionAsService" value="false"/>
+    <Parameter name="RS_AppType" value="HYBRID"/>
+    <Parameter name="RS_AppPackagePath" value="C:\Trials\MobileNative\MobileNative\android\debug\app-debug.apk"/>
+    <Parameter name="RS_AppPackage" value="com.oneapp"/>
+    <Parameter name="RS_AppActivity" value="com.oneapp.MainActivity"/>
+    <Parameter name="RS_AppPassword" value="whatever"/>
+    <Parameter name="RS_NodeExePath" value="some path in user directory"/>
+    <Parameter name="RS_AppiumJSPath" value="some path in user directory"/>
+    <Parameter name="RS_DeviceName" value="Android"/>
+    <Parameter name="RS_ImplicitWaitTime" value="0"/>
+    <Parameter name="RS_PlatformName" value="Android"/>
+    <Parameter name="RS_PlatformVersion" value="8.1"/>
+    <Parameter name="RS_NewCommandTimeout" value="60"/>
+    <Parameter name="RS_DeviceReadyTimeout" value="300"/>
+    <Parameter name="RS_AutoDownloadChromeDriver" value="true"/>
+    <Parameter name="RS_DeviceGroup" value="Android;Phone;8_1;<yourDeviceId>"/>
+    <Parameter name="RS_XcodeSigninId" value=""/>
+  </TestRunParameters>
+</RunSettings>
