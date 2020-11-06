@@ -1,5 +1,5 @@
 # Introduction 
-Framework for automating mobile applications using Appium.
+Sample framework for automating mobile applications using Appium.
 Solution contains core framework and test projects and is built on
 dotnet core.
 
@@ -40,9 +40,8 @@ adb connect 192.168.1.46
 ``` 
 PS C:\Source\MobileAutomation> adb shell
 $ dumpsys window windows | grep -E 'mCurrentFocus'
-mCurrentFocus=Window{c8c5313 u0 com.bellefield.itimekeep/md5bd47c877efb590789a7c1cc51d6525da.MainActivity}
+mCurrentFocus=Window{<Application>/<blah-blah>.MainActivity}
 ```
-![Image of iTimekeep](Documentation\resources\nativeApp.png)
 ## 3. Inspect native apps via appium inspector
 > Start appium desktop (server) and open inspect tool.
 > Provide the following desired capabilities and start the session.
@@ -64,8 +63,10 @@ chrome://inspect/#devices
 ```
 
 > This will list all the web page /web views open on the connected devices. Select appropriate option from the ones provided for your device and click Inspect.
-![Image of webInspect](Documentation\resources\webInspect.png)
 
 ## 5. Parallel execution on same machine
 Be aware of **systemPort** race conditions, eventhough selectFreePort is selected.
 This must be specified specifically to avaid them stepping over each other's foot. 
+
+## 6. Included Selenium Grid files
+Ensure that you add the DeviceGroup capability in your node config and ps script files. The capability at a minimum requires platformName and device type (phone/table) entries there. These are mandatory and help in running tests against specific devices on the grid.
