@@ -29,7 +29,6 @@ dotnet core.
 adb tcpip 5555
 adb connect 192.168.1.46
 ```
-![Image of tcp](Documentation\resources\tcp.png)
 ## 2. Get app id and activity
 > Launch the app on the device and then fire up the following commands in powershell
 - adb shell
