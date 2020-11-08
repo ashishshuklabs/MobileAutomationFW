@@ -10,12 +10,12 @@ dotnet core.
 - DotNetSeleniumExtras.WaitHelpers 3.11
 - NUnit 3.12
 > These are the latest framework/tooling supported in dotnet core.
-### Framework Test Dependencies
+### Framework Integration Test Dependencies
 - Android device
 - Appium Server
 - Selenium Grid
 
-# Build and Test
+# Build and Test Commands
 - dotnet build
 - dotnet test 
 
@@ -53,7 +53,6 @@ mCurrentFocus=Window{<Application>/<blah-blah>.MainActivity}
 
 ```
 *udid and deviceId can be the same. Run **adb devices** to get the device Id.*
-![Image of nativeInspect](Documentation\resources\nativeInspect.png)
 ## 4. Inspect Web / Hybrid app (Web Views)
 > Connect the device. For web app, Navigate to url in chrome (on the device). For hybrid app launch and navigate to appriate page of the app. Now on the desktop open chrome and type in the following:
 ```
