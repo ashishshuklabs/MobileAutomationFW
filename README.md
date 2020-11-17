@@ -18,7 +18,8 @@ dotnet core.
 # Build and Test Commands
 - dotnet build
 - dotnet test 
-
+# Consuming the framework
+- Checkout the Integration tests in the tests project. WebTests folder contains tests for mobile browsers. All setting provided in the "fixture setup" can be replaced with an equivalent run settings parameter value. 
 # How-To
 ## 1. Connect Appium Server to a device via wifi.
 *Useful when connecting multiple devices without usb cable*
@@ -62,7 +63,7 @@ chrome://inspect/#devices
 
 ## 5. Parallel execution on same machine
 Be aware of **systemPort** race conditions, eventhough selectFreePort is selected.
-This must be specified specifically to avaid them stepping over each other's foot. 
+This must be specified explicitly to avaid them stepping over each other's foot. 
 
 # Important - Selenium Grid (Files provided) and Framework Dependency
 Ensure that you add the DeviceGroup capability in your node config and test files. The capability at a minimum requires platformName(ios/android) and device type (phone/tablet) entries there. These are mandatory and help in running tests against specific devices on the grid and are closely tagged within the framework. Check out integration tests in the tests project for its correct usage.
